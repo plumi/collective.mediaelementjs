@@ -10,7 +10,16 @@ from Products.Archetypes.interfaces import IObjectInitializedEvent
 
 from StringIO import StringIO
 
-VIDEO_EXTENSIONS = ['.mp4', '.m4v',]
+
+VIDEO_EXTENSIONS = [
+    '.mp4', '.m4v',
+    '.ogg', '.ogv',
+    '.webm',
+    '.flv',
+    '.wmv',
+    '.mpeg', '.mpg', '.mpe',
+    '.mov', '.qt',
+    ]
 
 def remove_marker(object):
     changed = False
