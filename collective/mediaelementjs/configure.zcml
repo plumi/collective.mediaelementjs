@@ -32,4 +32,13 @@
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
         
+    <genericsetup:upgradeDepends
+        title="Activate rewrite of relative URLs for MEJS stylesheets."
+        source="0.1"
+        destination="2"
+        profile="collective.mediaelementjs:default"
+        import_steps="cssregistry"
+        run_deps="false"
+        />
+
 </configure>
