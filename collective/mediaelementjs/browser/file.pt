@@ -36,7 +36,11 @@
 		  tal:attributes="src view/href;
 				  type context/getContentType"
 		  />
-          <object width="720" height="576" type="application/x-shockwave-flash" data="++resource++collective.mediaelementjs/flashmediaelement.swf">
+          <object width="" height=""
+		  type="application/x-shockwave-flash"
+		  data="++resource++collective.mediaelementjs/flashmediaelement.swf"
+		  tal:attributes="width video/width; height video/height"
+		  >
             <param name="movie" value="++resource++collective.mediaelementjs/flashmediaelement.swf" />
             <param name="flashvars" value="" tal:attributes="value python:'file=%s' % view.href()" />
           </object>
