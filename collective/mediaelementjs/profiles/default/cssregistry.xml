@@ -2,5 +2,6 @@
 <object name="portal_css">
  <stylesheet title="" cacheable="True" compression="safe" cookable="True"
     enabled="1" expression="" id="++resource++collective.mediaelementjs/mediaelementplayer.min.css" 
+    applyPrefix="1"
     media="screen" rel="stylesheet" rendering="import"/>
 </object>

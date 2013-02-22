@@ -5,9 +5,15 @@ Large portions of this package have been blatantly copied from the `collective.f
 What it does
 ============
 
-Once installed, you can upload **h.264 baseline encoded .mp4 files** and they will automatically use a default view that renders the video using the MediaElementJS player.
+Once installed, you can upload MP4 (H.264), Ogg, WebM, FLV, WMV, MPEG
+and QuickTime (``.mov`` and ``.qt``) files and they will automatically use a
+default view that renders the video using the MediaElementJS player.
 
-MediaElementJS uses a HTML5 ``<video>`` tag, so any browser that can render .mp4 natively will do so (particularly any Safari browser, including iPhone and iPad). All others (i.e. those that cannot display ``<video>`` at all, such as older versions of IE or those which *can* but don't support the .h264 codec, such as Firefox or Opera) get the same video served via a Flash player. See the `MediaElementJS homepage <http://mediaelementjs.com/>`_ for more details.
+MediaElementJS uses a HTML5 ``<video>`` tag, so any browser that can
+render the media natively will do so, and uses plugins if either the
+codec or the ``video`` tag is not supported. See the `MediaElementJS
+browser and device support chart <http://mediaelementjs.com/>`_ for
+details.
 
 Installation
 ============

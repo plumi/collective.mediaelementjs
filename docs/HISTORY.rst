@@ -1,6 +1,15 @@
 History
 =======
 
+0.2 - (unreleased)
+=================
+
+ * Include the whole range of video formats supported by MEJS.
+ * Get initial size of Flash player from video metadata.
+ * Rewrite relative URLs in stylesheet when it is merged.
+ * Ignore file for git.
+ * Make sure all the needed files are packaged by distutils.
+
 0.1.5 - 2012-06-28
 ==================
 

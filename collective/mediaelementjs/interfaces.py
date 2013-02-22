@@ -8,7 +8,7 @@ class IMediaElementJSPlayable(Interface):
     """
 
 class IVideo(IMediaElementJSPlayable):
-    """Marker interface for files that contain mp4 content
+    """Marker interface for files that contain video content
     """
 
 class IMediaInfo(Interface):

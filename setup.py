@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1.5'
+version = '0.2'
 
 tests_require = ['collective.testcaselayer', 'interlude']
 
@@ -18,7 +18,7 @@ setup(name='collective.mediaelementjs',
     "Development Status :: 3 - Alpha",
     "Topic :: Multimedia :: Video :: Display",
     ],
-    keywords='video plone mp4 html5',
+    keywords='video plone html5 mp4 webm ogg flv wmv mpeg quicktime',
     authors='Tom Lazar, Unweb.me',
     author_email='tom@tomster.org, we@unweb.me',
     url='https://github.com/collective/collective.mediaelementjs',
