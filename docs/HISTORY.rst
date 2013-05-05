@@ -9,6 +9,8 @@ History
  * Rewrite relative URLs in stylesheet when it is merged.
  * Ignore file for git.
  * Make sure all the needed files are packaged by distutils.
+ * Remove jquery from browser resource [toutpt]
+ * Update mediaelement to 2.11.2
 
 0.1.5 - 2012-06-28
 ==================
