@@ -11,6 +11,7 @@ History
  * Make sure all the needed files are packaged by distutils.
  * Remove jquery from browser resource [toutpt]
  * Update mediaelement to 2.11.2
+ * Use link to display CSS stylesheet as it is the default in  Plone4 [toutpt]
 
 0.1.5 - 2012-06-28
 ==================
