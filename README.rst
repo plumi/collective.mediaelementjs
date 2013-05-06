@@ -22,6 +22,8 @@ details.
 Installation
 ============
 
+.. image:: https://secure.travis-ci.org/collective/collective.mediaelementjs.png
+    :target: http://travis-ci.org/collective/collective.mediaelementjs
 
 This addon can be installed has any other addons. please follow official
 documentation_
