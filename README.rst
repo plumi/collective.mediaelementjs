@@ -1,6 +1,9 @@
-A simple integration of the `MediaElementJS <http://mediaelementjs.com/>`_ video player for Plone.
+A simple integration of the `MediaElementJS <http://mediaelementjs.com/>`_ 
+video player for Plone.
 
-Large portions of this package have been blatantly copied from the `collective.flowplayer <http://pypi.python.org/pypi/collective.flowplayer>`_ product by Martin Aspeli.
+Large portions of this package have been blatantly copied from the
+`collective.flowplayer <http://pypi.python.org/pypi/collective.flowplayer>`_
+product by Martin Aspeli.
 
 What it does
 ============
@@ -15,10 +18,13 @@ codec or the ``video`` tag is not supported. See the `MediaElementJS
 browser and device support chart <http://mediaelementjs.com/>`_ for
 details.
 
+
 Installation
 ============
 
-Either use easy_install/pip or add it to your buildout. In either case, the name of the egg is ``collective.mediaelementjs``.
 
-Then, simply install it from the ``prefs_install_products_form`` in Plone, as you would with any other Plone product.
+This addon can be installed has any other addons. please follow official
+documentation_
+
+.. _documentation: http://plone.org/documentation/kb/installing-add-ons-quick-how-to
 

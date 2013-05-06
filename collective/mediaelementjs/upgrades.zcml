@@ -1,0 +1,23 @@
+<configure
+    xmlns="http://namespaces.zope.org/genericsetup"
+    i18n_domain="collective.medialementjs">
+
+    <upgradeDepends
+        title="Activate rewrite of relative URLs for MEJS stylesheets."
+        source="*"
+        destination="2"
+        profile="collective.mediaelementjs:default"
+        import_steps="cssregistry"
+        run_deps="false"
+        />
+
+    <upgradeStep
+        source="2"
+        destination="3"
+        title="Upgrade"
+        description=""
+        profile="collective.medialementjs:default"
+        handler=".upgrades.common"
+        />
+
+</configure>

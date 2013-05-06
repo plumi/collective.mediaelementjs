@@ -11,16 +11,17 @@
     <include zcml:condition="installed plone.dexterity" file="dexterity.zcml"/>
 
     <five:registerPackage package="." initialize=".initialize" />    
-    
+
     <adapter factory=".media.VideoInfoAdapter" />
+    <adapter factory=".media.AudioInfoAdapter" />
 
     <subscriber
-        for="Products.ATContentTypes.interface.IFileContent
+        for="Products.ATContentTypes.interfaces.file.IFileContent
              Products.Archetypes.interfaces.IObjectInitializedEvent"
         handler=".events.ChangeFileView"
         />
     <subscriber
-        for="Products.ATContentTypes.interface.IFileContent
+        for="Products.ATContentTypes.interfaces.file.IFileContent
              Products.Archetypes.interfaces.IObjectEditedEvent"
         handler=".events.ChangeFileView"
         />
@@ -31,14 +32,6 @@
         directory="profiles/default"
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
-        
-    <genericsetup:upgradeDepends
-        title="Activate rewrite of relative URLs for MEJS stylesheets."
-        source="0.1"
-        destination="2"
-        profile="collective.mediaelementjs:default"
-        import_steps="cssregistry"
-        run_deps="false"
-        />
+    <include file="upgrades.zcml" />
 
 </configure>

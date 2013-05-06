@@ -46,7 +46,7 @@ been set to the mediaelementjs view.
     >>> contents = browser.contents
     >>> '++resource++collective.mediaelementjs/mediaelement-and-player.min.js">' in contents
     True
-    >>> '++resource++collective.mediaelementjs/mediaelementplayer.min.css)' in contents
+    >>> '++resource++collective.mediaelementjs/mediaelementplayer.min.css"' in contents
     True
     >>> 'href="http://nohost/plone/Members/test_user_1_/barsandtone.mp4"' in contents
     True

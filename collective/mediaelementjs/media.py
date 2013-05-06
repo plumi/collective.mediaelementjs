@@ -4,7 +4,8 @@ from zope.annotation import factory
 from zope.component import adapts
 from zope.interface import implements
 
-from collective.mediaelementjs.interfaces import IVideo, IMediaInfo
+from collective.mediaelementjs.interfaces import IVideo, IMediaInfo, IAudio
+
 
 class VideoInfo(Persistent):
     implements(IMediaInfo)
@@ -16,4 +17,14 @@ class VideoInfo(Persistent):
         self.duration = None
 
 VideoInfoAdapter = factory(VideoInfo)
+
+
+class AudioInfo(Persistent):
+    implements(IMediaInfo)
+    adapts(IAudio)
+
+    def __init__(self):
+        self.duration = None
+
+AudioInfoAdapter = factory(AudioInfo)
 

@@ -4,4 +4,9 @@
     enabled="True" expression=""
     id="++resource++collective.mediaelementjs/mediaelement-and-player.min.js" inline="False"/>
 
+ <javascript
+     id="++resource++collective.mediaelement.js"
+     insert-after="++resource++collective.mediaelementjs/mediaelement-and-player.min.js"
+     />
+
 </object>

@@ -15,7 +15,6 @@ setup(name='collective.mediaelementjs',
     classifiers=[
     "Framework :: Plone",
     "Programming Language :: Python",
-    "Development Status :: 3 - Alpha",
     "Topic :: Multimedia :: Video :: Display",
     ],
     keywords='video plone html5 mp4 webm ogg flv wmv mpeg quicktime',
