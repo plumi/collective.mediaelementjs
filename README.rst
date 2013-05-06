@@ -46,7 +46,8 @@ People
 
 * Tom Lazar <tom@tomster.org> (author)
 * Servilio Afre Puentes <afrepues@mcmaster.ca>
-* Markos Gogoulos [] <mgogoulos@unweb.me>
+* Markos Gogoulos <mgogoulos@unweb.me>
+* JeanMichel FRANCOIS <toutpt@gmail.com>
 
 Companies
 ---------
