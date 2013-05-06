@@ -1,5 +1,5 @@
-A simple integration of the `MediaElementJS <http://mediaelementjs.com/>`_ 
-video player for Plone.
+An integration of the `MediaElementJS <http://mediaelementjs.com/>`_ 
+audio&video player for Plone.
 
 Large portions of this package have been blatantly copied from the
 `collective.flowplayer <http://pypi.python.org/pypi/collective.flowplayer>`_
@@ -18,6 +18,8 @@ codec or the ``video`` tag is not supported. See the `MediaElementJS
 browser and device support chart <http://mediaelementjs.com/>`_ for
 details.
 
+You can also upload MP3, Ogg, Oga, M4A, WebMa file, they will automaticly
+use the mediaelement view using a HTML5 ``<audio>`` tag.
 
 Installation
 ============
@@ -30,3 +32,24 @@ documentation_
 
 .. _documentation: http://plone.org/documentation/kb/installing-add-ons-quick-how-to
 
+Dependencies:
+
+* hachoir_core
+* hachoir_metadata
+* hachoir_parser
+
+Credits
+=======
+
+People
+------
+
+* Tom Lazar <tom@tomster.org> (author)
+* Servilio Afre Puentes <afrepues@mcmaster.ca>
+* Markos Gogoulos [] <mgogoulos@unweb.me>
+
+Companies
+---------
+
+* Unweb.me https://unweb.me/
+* Makina-Corpus http://www.makina-corpus.com
