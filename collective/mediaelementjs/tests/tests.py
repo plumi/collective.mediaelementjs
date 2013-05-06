@@ -8,11 +8,13 @@ from Products.Five import zcml
 
 from interlude import interact
 
-optionflags = (doctest.NORMALIZE_WHITESPACE|
-               doctest.ELLIPSIS|
+optionflags = (doctest.NORMALIZE_WHITESPACE |
+               doctest.ELLIPSIS |
                doctest.REPORT_NDIFF)
 
 ptc.setupPloneSite()
+
+
 class Layer(tcl_ptc.BasePTCLayer):
     """Install collective.mediaelementjs"""
     def afterSetUp(self):
@@ -31,6 +33,7 @@ FUNCTIONALTESTFILES = [
 TESTFILES = [
     '../metadata_extraction.txt',
 ]
+
 
 def test_suite():
     test_class = ptc.FunctionalTestCase
@@ -51,6 +54,7 @@ def test_suite():
             globs={'interact': interact},
         ) for file in TESTFILES]
     )
+
 
 if __name__ == '__main__':
     unittest.main(defaultTest='test_suite')

@@ -6,15 +6,18 @@ from hachoir_metadata.metadata import extractMetadata
 from hachoir_core.error import HachoirError
 from hachoir_core.stream import InputStreamError, InputIOStream
 
+
 def make_unicode(string):
     if not isinstance(string, unicode):
         string = string.decode('utf-8')
     return string
 
+
 def parse_raw(raw):
     stream = InputIOStream(raw)
     parser = guessParser(stream)
     return extract_metadata(parser)
+
 
 def parse_file(filename):
     filename = make_unicode(filename)
@@ -24,6 +27,7 @@ def parse_file(filename):
         logger.error("stream error! %s\n" % unicode(err))
         return None
     return extract_metadata(parser)
+
 
 def extract_metadata(parser):
     if not parser:
@@ -41,9 +45,9 @@ def extract_metadata(parser):
 
     return metadata
 
+
 def defensive_get(metadata, key):
     try:
         return metadata.get(key, None)
     except (ValueError, AttributeError):
         return None
-

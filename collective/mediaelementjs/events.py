@@ -28,6 +28,7 @@ AUDIO_EXTENSIONS = [
     '.wav', '.wma', '.webma'
 ]
 
+
 def remove_marker(object):
     changed = False
     if IVideo.providedBy(object):
@@ -49,20 +50,21 @@ class ChangeView(object):
     def __init__(self, object, event):
         self.object = object
         # TODO: do we really need this different from object?
-        self.content = content = event.object
-        if not self.interface.providedBy(content): return
+        self.content = event.object
+        if not self.interface.providedBy(self.content):
+            return
         if self.value is None:
-            remove_marker(content)
+            remove_marker(self.content)
             return
 
         ext = self.check_extension()
         if ext is None:
-            remove_marker(content)
+            remove_marker(self.content)
             return
 
         # set the view to mediaelementjs view
         if IObjectInitializedEvent.providedBy(event):
-            content.setLayout('mediaelementjs')
+            self.content.setLayout('mediaelementjs')
 
         if ext in VIDEO_EXTENSIONS:
             self.handleVideo()
@@ -132,4 +134,3 @@ class ChangeFileView(ChangeView):
         except AttributeError:
             file_handle = StringIO(str(file_object.data))
         return file_handle
-

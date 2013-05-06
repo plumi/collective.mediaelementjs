@@ -28,21 +28,25 @@ class File(BrowserView):
         if not self.isVideo:
             return
         info = IMediaInfo(self.context)
-        return dict(url=self.href(),
+        return dict(
+            url=self.href(),
             title=self.context.Title(),
             description=self.context.Description(),
             height=info.height,
             width=info.width,
-            duration=info.duration)
+            duration=info.duration
+        )
 
     def audio(self):
         if not self.isAudio:
             return
         info = IMediaInfo(self.context)
-        return dict(url=self.href(),
+        return dict(
+            url=self.href(),
             title=self.context.Title(),
             description=self.context.Description(),
-            duration=info.duration)
+            duration=info.duration
+        )
 
     def getFilename(self):
         context = aq_inner(self.context)
@@ -57,5 +61,4 @@ class File(BrowserView):
             extension = os.path.splitext(filename)[1]
             if not url.endswith(extension):
                 ext = "?e=%s" % extension
-        return self.context.absolute_url()+ext
-
+        return self.context.absolute_url() + ext

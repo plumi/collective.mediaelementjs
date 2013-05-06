@@ -10,7 +10,7 @@ from collective.mediaelementjs.interfaces import IVideo, IMediaInfo, IAudio
 class VideoInfo(Persistent):
     implements(IMediaInfo)
     adapts(IVideo)
-    
+
     def __init__(self):
         self.height = None
         self.width = None
@@ -27,4 +27,3 @@ class AudioInfo(Persistent):
         self.duration = None
 
 AudioInfoAdapter = factory(AudioInfo)
-
