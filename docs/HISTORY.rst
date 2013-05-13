@@ -1,20 +1,24 @@
 History
 =======
 
-0.2 - (unreleased)
-=================
+0.3 - (unreleased)
+==================
+
+ * Remove jquery from browser resource [toutpt]
+ * Update mediaelement to 2.11.2 [toutpt]
+ * Use link to display CSS stylesheet as it is the default in  Plone4 [toutpt]
+ * Add audio support [toutpt]
+ * Move audio and video init in ++resource++collective.mediaelement.js
+   to support for all audio/video tags in the page. [toutpt]
+
+0.2 - 2013-02-22
+================
 
  * Include the whole range of video formats supported by MEJS.
  * Get initial size of Flash player from video metadata.
  * Rewrite relative URLs in stylesheet when it is merged.
  * Ignore file for git.
  * Make sure all the needed files are packaged by distutils.
- * Remove jquery from browser resource [toutpt]
- * Update mediaelement to 2.11.2 [toutpt]
- * Use link to display CSS stylesheet as it is the default in  Plone4 [toutpt]
- * Add audio support [toutpt]
- * Move audio and video init in ++resource++collective.mediaelement.js 
- to support for all audio/video tags in the page. [toutpt]
 
 0.1.5 - 2012-06-28
 ==================
