@@ -57,6 +57,7 @@ Companies
 
 * `Unweb.me <https://unweb.me/>`_
 * `Makina-Corpus <http://www.makina-corpus.com>`_
+* `McMaster University, Department of Family Medicine <http://fammed.mcmaster.ca/>`_
 
 
 .. _MediaElementJS: http://mediaelementjs.com/
