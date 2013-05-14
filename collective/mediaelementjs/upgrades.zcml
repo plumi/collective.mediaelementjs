@@ -11,7 +11,7 @@
         run_deps="false"
         />
 
-    <upgradeStep
+    <upgradeDepends
         title="Trigger re-merge of JS and CSS"
         description="Thus it is ensured that the new MEjs version is
                      sent to the browser, as well as the new JS
@@ -19,7 +19,8 @@
         source="2"
         destination="3"
         profile="collective.mediaelementjs:default"
-        handler=".upgrades.common"
+        import_steps="cssregistry jsregistry"
+        run_deps="false"
         />
 
 </configure>
