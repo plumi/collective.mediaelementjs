@@ -16,7 +16,7 @@
         destination="3"
         title="Upgrade"
         description=""
-        profile="collective.medialementjs:default"
+        profile="collective.mediaelementjs:default"
         handler=".upgrades.common"
         />
 

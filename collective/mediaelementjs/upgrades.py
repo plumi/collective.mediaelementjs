@@ -1,5 +1,5 @@
 from Products.CMFCore.utils import getToolByName
-PROFILE = 'profile-collective.medialementjs:default'
+PROFILE = 'profile-collective.mediaelementjs:default'
 
 
 def common(context):
