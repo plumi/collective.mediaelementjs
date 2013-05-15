@@ -1,8 +1,8 @@
 History
 =======
 
-0.3 - (unreleased)
-==================
+0.3 - 2013-05-15
+================
 
  * List all directly used packages as dependencies in setup.py
    [afrepues]
