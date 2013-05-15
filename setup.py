@@ -3,7 +3,11 @@ import os
 
 version = '0.3'
 
-tests_require = ['collective.testcaselayer', 'interlude']
+tests_require = [
+    'collective.testcaselayer',
+    'interlude',
+    'Products.PloneTestCase',
+]
 
 setup(name='collective.mediaelementjs',
       version=version,
@@ -45,6 +49,20 @@ setup(name='collective.mediaelementjs',
           'hachoir_core',
           'hachoir_metadata',
           'hachoir_parser',
+          'Acquisition',
+          'Products.Archetypes',
+          'Products.ATContentTypes',
+          'Products.CMFCore',
+          'Products.GenericSetup >=1.6',
+          'ZODB3',
+          'Zope2',
+          'plone.rfc822',
+          'zope.annotation',
+          'zope.cachedescriptors',
+          'zope.component',
+          'zope.i18nmessageid',
+          'zope.interface',
+          'zope.schema',
       ],
       tests_require=tests_require,
       extras_require={'test': tests_require},

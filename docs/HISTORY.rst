@@ -4,6 +4,8 @@ History
 0.3 - (unreleased)
 ==================
 
+ * List all directly used packages as dependencies in setup.py
+   [afrepues]
  * Remove jquery from browser resource [toutpt]
  * Update mediaelement to 2.11.2 [toutpt]
  * Use link to display CSS stylesheet as it is the default in  Plone4 [toutpt]
