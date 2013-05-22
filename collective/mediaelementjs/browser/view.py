@@ -52,6 +52,9 @@ class File(BrowserView):
         context = aq_inner(self.context)
         return context.getFilename()
 
+    def getContentType(self):
+        return self.context.getContentType()
+
     def href(self):
         context = aq_inner(self.context)
         ext = ''

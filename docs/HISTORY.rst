@@ -4,6 +4,8 @@ History
 0.? - 2013-0?-??
 ================
 
+* Refactor(view): add getContentType on view and not on context
+  to make it easier to customize with dexterity [toutpt]
 
 0.3 - 2013-05-15
 ================
