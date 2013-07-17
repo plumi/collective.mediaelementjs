@@ -1,6 +1,10 @@
 History
 =======
 
+0.3.2 - 2013-07-17
+=================
+* Upgrade mediaelementjs library to 2.12.0 [mgogoulos]
+
 0.? - 2013-0?-??
 ================
 
