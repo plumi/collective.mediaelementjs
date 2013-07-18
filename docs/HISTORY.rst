@@ -1,13 +1,10 @@
 History
 =======
 
-0.3.2 - 2013-07-17
-=================
-* Upgrade mediaelementjs library to 2.12.0 [mgogoulos]
-
-0.? - 2013-0?-??
+0.4 - 2013-07-17
 ================
 
+* Upgrade mediaelementjs library to 2.12.0 [mgogoulos]
 * Refactor(view): add getContentType on view and not on context
   to make it easier to customize with dexterity [toutpt]
 
