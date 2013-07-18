@@ -1,6 +1,17 @@
 History
 =======
 
+0.4.1 - 2013-07-18
+==================
+
+* Remove artifact from MEjs repository
+  [afrepues]
+* Depend on Plone-provided jQuery
+  [afrepues]
+* Match headings in the history with latest released version
+  [afrepues]
+
+
 0.4 - 2013-07-17
 ================
 
